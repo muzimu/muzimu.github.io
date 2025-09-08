@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://muzimu.github.io/sitemap.xml
