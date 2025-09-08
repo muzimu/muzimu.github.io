@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on muzimu</title>
+    <link>http://localhost:1313/tags/go/</link>
+    <description>Recent content in Go on muzimu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2025 muzimu</copyright>
+    <lastBuildDate>Sat, 06 Sep 2025 17:42:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>如何使用Hugo&amp;Blowfish搭建博客</title>
+      <link>http://localhost:1313/posts/hugo/</link>
+      <pubDate>Sat, 06 Sep 2025 17:42:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/hugo/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hugo/cover.png" />
+    </item>
+    
+  </channel>
+</rss>
