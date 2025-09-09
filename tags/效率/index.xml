@@ -7,16 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2025 muzimu</copyright>
-    <lastBuildDate>Tue, 09 Sep 2025 17:53:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 20:53:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>markdown语法示例</title>
+      <link>http://localhost:1313/posts/markdown/</link>
+      <pubDate>Tue, 09 Sep 2025 20:53:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/markdown/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/markdown/cover.png" />
+    </item>
     
     <item>
       <title>提高Mac工作效率，自定义快捷键</title>
-      <link>http://localhost:1313/posts/karabiner/mac%E6%93%8D%E4%BD%9C%E6%B5%81&#43;karabiner/</link>
+      <link>http://localhost:1313/posts/karabiner/</link>
       <pubDate>Tue, 09 Sep 2025 17:53:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/karabiner/mac%E6%93%8D%E4%BD%9C%E6%B5%81&#43;karabiner/</guid>
+      <guid>http://localhost:1313/posts/karabiner/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/karabiner/cover.png" />
     </item>
     
   </channel>

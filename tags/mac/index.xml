@@ -11,12 +11,12 @@
     
     <item>
       <title>提高Mac工作效率，自定义快捷键</title>
-      <link>http://localhost:1313/posts/karabiner/mac%E6%93%8D%E4%BD%9C%E6%B5%81&#43;karabiner/</link>
+      <link>http://localhost:1313/posts/karabiner/</link>
       <pubDate>Tue, 09 Sep 2025 17:53:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/karabiner/mac%E6%93%8D%E4%BD%9C%E6%B5%81&#43;karabiner/</guid>
+      <guid>http://localhost:1313/posts/karabiner/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/karabiner/cover.png" />
     </item>
     
   </channel>
