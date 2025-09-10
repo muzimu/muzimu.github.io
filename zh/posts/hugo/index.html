@@ -116,7 +116,7 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Zhs",
+    "articleSection": "欢迎来到 Blowfish ！",
     "name": "如何使用Hugo\u0026Blowfish搭建博客",
     "headline": "如何使用Hugo\u0026Blowfish搭建博客",
     
@@ -136,7 +136,7 @@
     "keywords": ["技术","Go"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "7"
+    "wordCount": "5"
   }]
   </script>
 
@@ -204,6 +204,29 @@
 
   
   
+    
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDS0R4OAJACTBk_WOvMqM4kUGMPkyxvHGY",
+      authDomain: "AIzaSyDS0R4OAJACTBk_WOvMqM4kUGMPkyxvHGY",
+      projectId: "muzimu-faf35",
+      storageBucket: "muzimu-faf35.firebasestorage.app",
+      messagingSenderId: "858043631174",
+      appId: "1:858043631174:web:14afc2212c6f7f9d8dec47",
+      measurementId: "G-MV0DP6MNK9"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+    
+  
 
   
   
@@ -253,11 +276,11 @@
       
         
   <a
-  href="/posts/"
+  href=""
   
   class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
   
-  <p class="text-base font-medium" title="Posts">
+  <p class="text-base font-medium" title="">
     文章
   </p>
 </a>
@@ -287,6 +310,41 @@
     
 
     
+  <div>
+    <div class="cursor-pointer flex items-center nested-menu">
+      <span class="ltr:mr-1 rtl:ml-1">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+    <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg></span>
+      </span>
+      <div
+        class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+        title="如何使用Hugo&amp;Blowfish搭建博客">简体中文</div>
+    </div>
+    <div class="absolute menuhide">
+      <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+        <div class="flex flex-col space-y-3">
+          
+            <a href="/zh/posts/hugo/" class="flex items-center">
+              <p
+                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+                title="如何使用Hugo&amp;Blowfish搭建博客">
+                简体中文
+              </p>
+            </a>
+          
+            <a href="/en/zh/posts/hugo/" class="flex items-center">
+              <p
+                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+                title="如何使用Hugo&amp;Blowfish搭建博客">
+                EN
+              </p>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     
 
@@ -326,6 +384,41 @@
     <span></span>
 
     
+  <div>
+    <div class="cursor-pointer flex items-center nested-menu">
+      <span class="ltr:mr-1 rtl:ml-1">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+    <path fill="currentColor" d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"/></svg></span>
+      </span>
+      <div
+        class="text-sm font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+        title="如何使用Hugo&amp;Blowfish搭建博客">简体中文</div>
+    </div>
+    <div class="absolute menuhide">
+      <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+        <div class="flex flex-col space-y-3">
+          
+            <a href="/zh/posts/hugo/" class="flex items-center">
+              <p
+                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+                title="如何使用Hugo&amp;Blowfish搭建博客">
+                简体中文
+              </p>
+            </a>
+          
+            <a href="/en/zh/posts/hugo/" class="flex items-center">
+              <p
+                class="text-sm font-sm text-gray-500 hover:text-primary-600 dark:hover:text-primary-400"
+                title="如何使用Hugo&amp;Blowfish搭建博客">
+                EN
+              </p>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     
 
@@ -384,11 +477,11 @@
               
   <li class="mt-1">
   <a
-    href="/posts/"
+    href=""
     
     class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-bg font-bg" title="Posts">
+    <p class="text-bg font-bg" title="">
       文章
     </p>
   </a>
@@ -447,17 +540,76 @@
       
       
         
+
+
+    <div id="hero" class="h-[150px] md:h-[200px]"></div>
+  
+  <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom">
     
-      <div
-        class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom"
-        style="background-image:url(/zh/posts/hugo/cover_hu_1357c3d414d3b688.png);"></div>
     
+      
+    
+    <img
+      id="background-image"
+      src="/zh/posts/hugo/cover_hu_1357c3d414d3b688.png"
+      alt="Background Image"
+      class="absolute inset-0 w-full h-full object-cover">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div>
+    <div
+      class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div>
+  </div>
+
+  
+    <div
+      id="background-blur"
+      class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/background-blur.min.0ad33cb9c066f652728b2cc09c9ceaf32645544f48e8b6b38f120d86f433ed997da275a49e6151fe0176430c45376812708d84727f3f969101fb44a4345b3f34.js"
+      integrity="sha512-CtM8ucBm9lJyiyzAnJzq8yZFVE9I6LazjxINhvQz7Zl9onWknmFR/gF2QwxFN2gScI2Ecn8/lpEB&#43;0SkNFs/NA=="
+      data-target-id="background-blur"
+      data-image-id="background-image"
+      data-image-url="/zh/posts/hugo/cover.png"></script>
   
       
     
 
     
     <header id="single_header" class="mt-5 max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/"
+      >muzimu</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/zh/"
+      >欢迎来到 Blowfish ！</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/zh/posts/hugo/"
+      >如何使用Hugo&amp;Blowfish搭建博客</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         如何使用Hugo&Blowfish搭建博客
@@ -513,7 +665,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-09-06T17:42:06&#43;08:00">6 September 2025</time><span class="px-2 text-primary-500">&middot;</span><span>7 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+      <time datetime="2025-09-06T17:42:06&#43;08:00">2025-09-06</time><span class="px-2 text-primary-500">&middot;</span><span>5 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
     
 
     
@@ -677,17 +829,26 @@
 
         <div class="article-content max-w-prose mb-20">
           
-<h1 class="relative group">如何搭建本站 
-    <div id="如何搭建本站" class="anchor"></div>
+<h1 class="relative group">配置基础环境 
+    <div id="配置基础环境" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%e5%a6%82%e4%bd%95%e6%90%ad%e5%bb%ba%e6%9c%ac%e7%ab%99" aria-label="锚点">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#%e9%85%8d%e7%bd%ae%e5%9f%ba%e7%a1%80%e7%8e%af%e5%a2%83" aria-label="锚点">#</a>
     </span>        
     
 </h1>
-<pre><code>本站由 Hugo &amp; Blowfish 强力驱动
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
+</span></span></span></code></pre></div>
+<h1 class="relative group"> 
+    <div id="" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#" aria-label="锚点">#</a>
+    </span>        
+    
+</h1>
 
           
           
@@ -709,14 +870,17 @@
           
           
         
+          
+          
+        
         
         
         <script
           type="text/javascript"
           src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
           integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
-          data-oid="views_zh/posts/hugo/index.md"
-          data-oid-likes="likes_zh/posts/hugo/index.md"></script>
+          data-oid="views_zh/posts/Hugo/index.md"
+          data-oid-likes="likes_zh/posts/Hugo/index.md"></script>
       
     </section>
 
@@ -732,17 +896,38 @@
       <div class="flex justify-between pt-3">
         <span>
           
-        </span>
-        <span>
-          
-            <a class="flex text-right group ml-3" href="/zh/posts/test2/">
+            <a class="flex group mr-3" href="/zh/posts/vue/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Test2</span
+                  >Vue3笔记</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-09-08T19:46:27&#43;08:00">8 September 2025</time>
+                    <time datetime="2024-11-30T10:42:06&#43;08:00">2024-11-30</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/zh/posts/karabiner/">
+              <span class="flex flex-col">
+                <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >提高Mac工作效率，自定义快捷键</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-09-09T17:53:06&#43;08:00">2025-09-09</time>
                   
                 </span>
               </span>

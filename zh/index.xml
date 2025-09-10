@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zhs on muzimu</title>
+    <title>欢迎来到 Blowfish ！ on muzimu</title>
     <link>http://localhost:1313/zh/</link>
-    <description>Recent content in Zhs on muzimu</description>
+    <description>Recent content in 欢迎来到 Blowfish ！ on muzimu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2025 muzimu</copyright>
-    <lastBuildDate>Mon, 08 Sep 2025 19:46:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Sep 2025 20:53:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Test2</title>
-      <link>http://localhost:1313/zh/posts/test2/</link>
-      <pubDate>Mon, 08 Sep 2025 19:46:27 +0800</pubDate>
+      <title>markdown语法示例</title>
+      <link>http://localhost:1313/zh/posts/markdown/</link>
+      <pubDate>Tue, 09 Sep 2025 20:53:06 +0800</pubDate>
       
-      <guid>http://localhost:1313/zh/posts/test2/</guid>
+      <guid>http://localhost:1313/zh/posts/markdown/</guid>
       <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/zh/posts/markdown/cover.png" />
+    </item>
+    
+    <item>
+      <title>提高Mac工作效率，自定义快捷键</title>
+      <link>http://localhost:1313/zh/posts/karabiner/</link>
+      <pubDate>Tue, 09 Sep 2025 17:53:06 +0800</pubDate>
       
+      <guid>http://localhost:1313/zh/posts/karabiner/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/zh/posts/karabiner/cover.png" />
     </item>
     
     <item>
@@ -27,6 +37,16 @@
       <guid>http://localhost:1313/zh/posts/hugo/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/zh/posts/hugo/cover.png" />
+    </item>
+    
+    <item>
+      <title>Vue3笔记</title>
+      <link>http://localhost:1313/zh/posts/vue/</link>
+      <pubDate>Sat, 30 Nov 2024 10:42:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/zh/posts/vue/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/zh/posts/vue/cover.png" />
     </item>
     
   </channel>
