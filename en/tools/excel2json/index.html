@@ -1,0 +1,10 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Excel to JSON - muzimu</title><meta name=description content="Online Excel to JSON tool, supports .xlsx files"><link rel=stylesheet href=/css/excel2json/styles.css></head><body><header><h1>Excel to JSON</h1><nav><a href=/en/tools/>← Back</a></nav></header><main><div class=container><div class=upload-area id=upload-area><div class=upload-icon>📊</div><p>Drag & drop Excel file here, or click to select</p><p class=upload-hint>Supports .xlsx / .xls format</p><input type=file id=file-input accept=.xlsx,.xls style=display:none>
+<button id=btn-select>Select File</button></div><div class=options id=options style=display:none><div class=option-row><label>Sheet：
+<select id=sheet-select></select>
+</label><label><input type=checkbox id=no-header> No header (use col0, col1...)
+</label><label><input type=checkbox id=pretty> Format JSON</label></div><div class=option-row><button id=btn-convert>Convert</button>
+<button id=btn-copy style=display:none>Copy JSON</button>
+<button id=btn-download style=display:none>Download JSON</button>
+<button id=btn-reset>Reselect</button></div></div><div id=status class=status></div><div class=output-pane id=output-pane style=display:none><div class=editor-label>JSON Output <span id=row-count></span></div><textarea id=output readonly></textarea></div><div class=help><h3>Usage</h3><ul><li>Upload .xlsx or .xls format Excel file</li><li>First row is used as field names (JSON keys) by default, can be disabled</li><li>Supports selecting specific worksheet</li><li>Runs entirely in browser, files are not uploaded to server</li></ul></div></div></main><footer><p>Built with <a href=https://github.com/muzimu/excel2json target=_blank>excel2json</a> |
+using <a href=https://sheetjs.com target=_blank>SheetJS</a> |
+Runs entirely in browser</p></footer><script src=https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js></script><script src=/js/excel2json/main.js></script></body></html>

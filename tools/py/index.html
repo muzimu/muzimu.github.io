@@ -1,0 +1,7 @@
+<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>汉字转拼音首字母 - muzimu</title><meta name=description content="在线汉字转拼音首字母工具，支持大小写和非汉字字符过滤"><link rel=stylesheet href=/css/py/styles.css></head><body><header><h1>汉字转拼音首字母</h1><nav><a href=/tools/>← 返回</a></nav></header><main><div class=container><div class=toolbar><label><input type=checkbox id=chk-upper> 大写首字母</label>
+<label><input type=checkbox id=chk-keep checked> 保留非汉字字符</label>
+<button id=btn-run>转换</button>
+<button id=btn-copy>复制结果</button>
+<button id=btn-clear>清空</button></div><div class=editors><div class=editor-pane><div class=editor-label>输入（支持多行）</div><textarea id=input placeholder=输入汉字，例如：张三李四></textarea></div><div class=editor-pane><div class=editor-label>输出</div><textarea id=output readonly placeholder=拼音首字母将显示在这里...></textarea></div></div><div id=status class=status></div><div class=help><h3>使用说明</h3><ul><li>将汉字转换为拼音首字母，支持逐行处理</li><li>&lt;strong>大写&lt;/strong>：输出大写首字母，例如 &lt;code>张三&lt;/code> → &lt;code>ZS&lt;/code></li><li>&lt;strong>保留非汉字&lt;/strong>：保留数字、字母、符号等，例如 &lt;code>张三 2024&lt;/code> → &lt;code>zs 2024&lt;/code></li></ul></div></div></main><footer><p>基于 <a href=https://github.com/Musicians-mu/py target=_blank>py</a> |
+使用 <a href=https://github.com/zh-lx/pinyin-pro target=_blank>pinyin-pro</a> |
+完全在浏览器中运行</p></footer><script src=https://cdn.jsdelivr.net/npm/pinyin-pro@3.26.0/dist/index.js></script><script src=/js/py/main.js></script></body></html>

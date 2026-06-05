@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+header { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+header h1 { font-size: 1.5rem; font-weight: 600; }
+header nav a { color: #666; text-decoration: none; font-size: .875rem; }
+header nav a:hover { color: #333; }
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.toolbar { display: flex; gap: .5rem; margin-bottom: 1rem; align-items: center; flex-wrap: wrap; }
+.options { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: center; flex-wrap: wrap; }
+.options label { display: flex; align-items: center; gap: .3rem; cursor: pointer; font-size: .9rem; }
+button { padding: .4rem .9rem; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; background: #fff; font-size: .875rem; }
+button:hover { background: #f0f0f0; }
+button.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.editors { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media(max-width:600px) { .editors { grid-template-columns: 1fr; } }
+.editor-label { font-size: .8rem; font-weight: 600; color: #666; margin-bottom: .3rem; text-transform: uppercase; letter-spacing: .05em; }
+textarea { width: 100%; height: 300px; border: 1px solid #e0e0e0; border-radius: 4px; padding: .75rem; font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: .875rem; resize: vertical; background: #fff; }
+textarea:focus { outline: none; border-color: #2563eb; }
+.status { min-height: 1.5rem; font-size: .875rem; margin-top: .5rem; }
+.status.error { color: #dc2626; }
+.status.success { color: #16a34a; }
+.help { margin-top: 2rem; background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 1rem 1.5rem; }
+.help h3 { font-size: .95rem; margin-bottom: .5rem; }
+.help ul { padding-left: 1.2rem; font-size: .875rem; line-height: 1.8; }
+code { background: #f0f0f0; padding: .1rem .3rem; border-radius: 3px; font-size: .85em; }
+footer { text-align: center; padding: 2rem; color: #666; font-size: .875rem; margin-top: 2rem; }
+footer a { color: #666; }
+@media(prefers-color-scheme:dark) {
+  body { background: #1a1a1a; color: #e0e0e0; }
+  header, .help { background: #2d2d2d; border-color: #404040; }
+  header nav a { color: #999; }
+  textarea { background: #2d2d2d; border-color: #404040; color: #e0e0e0; }
+  button { background: #2d2d2d; border-color: #404040; color: #e0e0e0; }
+  button:hover { background: #404040; }
+  code { background: #404040; }
+  footer { color: #999; }
+}

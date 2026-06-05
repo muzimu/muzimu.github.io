@@ -1,0 +1,10 @@
+<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Excel 转 JSON - muzimu</title><meta name=description content="在线 Excel 转 JSON 工具，支持 .xlsx 文件"><link rel=stylesheet href=/css/excel2json/styles.css></head><body><header><h1>Excel 转 JSON</h1><nav><a href=/tools/>← 返回</a></nav></header><main><div class=container><div class=upload-area id=upload-area><div class=upload-icon>📊</div><p>拖拽 Excel 文件到此处，或点击选择文件</p><p class=upload-hint>支持 .xlsx / .xls 格式</p><input type=file id=file-input accept=.xlsx,.xls style=display:none>
+<button id=btn-select>选择文件</button></div><div class=options id=options style=display:none><div class=option-row><label>工作表：
+<select id=sheet-select></select>
+</label><label><input type=checkbox id=no-header> 无表头（使用 col0, col1...）
+</label><label><input type=checkbox id=pretty> 格式化 JSON</label></div><div class=option-row><button id=btn-convert>转换</button>
+<button id=btn-copy style=display:none>复制 JSON</button>
+<button id=btn-download style=display:none>下载 JSON</button>
+<button id=btn-reset>重新选择</button></div></div><div id=status class=status></div><div class=output-pane id=output-pane style=display:none><div class=editor-label>JSON 输出 <span id=row-count></span></div><textarea id=output readonly></textarea></div><div class=help><h3>使用说明</h3><ul><li>上传 .xlsx 或 .xls 格式的 Excel 文件</li><li>默认将第一行作为字段名（JSON key），可关闭</li><li>支持选择指定工作表</li><li>完全在浏览器中运行，文件不会上传到服务器</li></ul></div></div></main><footer><p>基于 <a href=https://github.com/muzimu/excel2json target=_blank>excel2json</a> |
+使用 <a href=https://sheetjs.com target=_blank>SheetJS</a> |
+完全在浏览器中运行</p></footer><script src=https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js></script><script src=/js/excel2json/main.js></script></body></html>
