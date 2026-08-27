@@ -614,6 +614,7 @@ class TypeGenerator {
       if (language === 'typescript' || language === 'typescript/typealias') return TypeGenerator._json2ts(obj, 'Root');
       if (language === 'kotlin') return TypeGenerator._json2kotlin(obj, 'Root');
       if (language === 'rust') return TypeGenerator._json2rust(obj, 'Root');
+      if (language === 'python') return TypeGenerator._json2python(obj, 'Root');
       if (language === 'json_schema') return TypeGenerator._json2schema(obj, 'Root');
       return `// Unsupported language: ${language}`;
     } catch(e) {
@@ -714,6 +715,61 @@ class TypeGenerator {
       return name;
     }
     return 'serde_json::Value';
+  }
+
+  // Python dataclass generator
+  static _json2python(obj, name) {
+    const classes = [];
+    const imports = new Set();
+    const rootType = TypeGenerator._pythonType(obj, name, classes, imports);
+    const importLine = imports.size > 0 ? `from typing import ${[...imports].sort().join(', ')}\n` : '';
+    const definitions = classes.join('\n\n');
+    const alias = rootType === name ? '' : `${name} = ${rootType}`;
+    return `from __future__ import annotations\n${importLine}\nfrom dataclasses import dataclass\n\n${definitions || alias}`;
+  }
+
+  static _pythonClass(obj, name, classes, imports) {
+    const lines = ['@dataclass', `class ${name}:`];
+    const usedFields = new Set();
+    const keywords = new Set(['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']);
+
+    for (const [key, value] of Object.entries(obj)) {
+      let field = key.replace(/[^a-zA-Z0-9_]/g, '_') || 'field';
+      if (/^[0-9]/.test(field)) field = '_' + field;
+      if (keywords.has(field)) field += '_';
+      const baseField = field;
+      for (let suffix = 2; usedFields.has(field); suffix++) field = `${baseField}_${suffix}`;
+      usedFields.add(field);
+
+      const typeName = TypeGenerator._pythonType(value, name + TypeGenerator._cap(key), classes, imports);
+      const sourceKey = field === key ? '' : `  # JSON key: ${JSON.stringify(key)}`;
+      lines.push(`    ${field}: ${typeName}${sourceKey}`);
+    }
+
+    if (lines.length === 2) lines.push('    pass');
+    classes.push(lines.join('\n'));
+    return name;
+  }
+
+  static _pythonType(value, name, classes, imports) {
+    if (value === null) {
+      imports.add('Any');
+      imports.add('Optional');
+      return 'Optional[Any]';
+    }
+    if (typeof value === 'boolean') return 'bool';
+    if (typeof value === 'number') return Number.isInteger(value) ? 'int' : 'float';
+    if (typeof value === 'string') return 'str';
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        imports.add('Any');
+        return 'list[Any]';
+      }
+      return `list[${TypeGenerator._pythonType(value[0], name + 'Item', classes, imports)}]`;
+    }
+    if (typeof value === 'object') return TypeGenerator._pythonClass(value, name, classes, imports);
+    imports.add('Any');
+    return 'Any';
   }
 
   // JSON Schema generator
@@ -877,6 +933,7 @@ class JQPlayground {
                 <option value="typescript">TypeScript</option>
                 <option value="typescript/typealias">TypeScript (combined)</option>
                 <option value="go">Go</option>
+                <option value="python">Python</option>
                 <option value="json_schema">JSON Schema</option>
                 <option value="kotlin">Kotlin</option>
                 <option value="rust">Rust</option>
@@ -1117,6 +1174,7 @@ class JQPlayground {
         'typescript': 'typescript',
         'typescript/typealias': 'typescript',
         'go': 'go',
+        'python': 'python',
         'json_schema': 'json',
         'kotlin': 'kotlin',
         'rust': 'rust',
